@@ -1,0 +1,25 @@
+{
+  "name": "randompages",
+  "version": "1.0.0",
+  "description": "Resources ralated to infrastructure and cdn etc",
+  "main": "index.js",
+  "dependencies": {
+    "aws-sdk": "^2.444.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "handbrake-js": "^3.0.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CliffCrerar/admin-pages.git"
+  },
+  "author": "Cliff Crerar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CliffCrerar/admin-pages/issues"
+  },
+  "homepage": "https://github.com/CliffCrerar/admin-pages#readme"
+}

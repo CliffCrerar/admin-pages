@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="domain" content="Infinityarc.net" />
+		<title>Future Space</title>
+		<style>
+			@import url('https://fonts.googleapis.com/css?family=Aldrich|Orbitron|Prompt|Rationale|Saira|ZCOOL+QingKe+HuangYou');
+
+			* {
+				box-sizing: border-box;
+				--shad:
+					1px 1px 0 black,
+					2px 2px 0 black,
+					3px 3px 0 black,
+					5px 5px 8px rgba(0, 0, 0, 0.8),
+					7px 7px 10px rgba(0, 0, 0, 0.5);
+			}
+
+			html,
+			body {
+				position: relative;
+				min-width: 100vw;
+				height: auto;
+				margin: 0;
+				padding: 0;
+				font-family: Saira;
+			}
+
+			.bg-vid {
+				position: fixed;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				width: 120vw;
+				height: auto;
+
+			}
+
+			.center-band {
+				position: absolute;
+				top: 20vh;
+				min-height: 60vh;
+				width: 100%;
+				z-index: 100;
+				background: rgba(0, 0, 0, 0.4);
+				padding: 0 10vw;
+				color: white;
+			}
+
+			h1 {
+				font-size: 8rem;
+				text-shadow: var(--shad);
+				margin: 0;
+				padding: 0;
+				text-align: center;
+			}
+
+			h2 {
+				position: relative;
+				font-size: 4rem;
+				text-shadow: var(--shad);
+				margin: 0;
+				padding: 0;
+				left: 10%;
+
+
+			}
+
+			h3 {
+				font-family: Aldrich;
+				font-size: 6rem;
+				/* text-align: center; */
+				text-shadow: var(--shad);
+			}
+
+			.center-band div:first-child {
+				width: 30vw;
+				flex-grow: 5;
+			}
+
+			.center-band div:last-child {
+				flex-grow: 2;
+			}
+
+
+
+			.fade-in {
+				position: relative;
+				/* opacity: 0; */
+				/* animation-name: fadeIn;
+				animation-duration: 15s;
+				animation-timing-function: ease-in-out;
+				animation-fill-mode: forwards; */
+				/*animation: name duration timing-function delay iteration-count direction fill-mode;*/
+			}
+
+			@keyframes fadeIn {
+				0% {
+					opacity: 0;
+					transform: scale(0.1);
+				}
+
+				70% {
+					transform: scale(1.5);
+				}
+
+				100% {
+					opacity: 0.95;
+					transform: scale(1);
+				}
+			}
+
+			.img-logo-con {
+				position: absolute;
+
+			}
+
+			.img-logo-con img {
+				position: relative;
+				width: 10vh;
+				border-radius: 15px;
+				overflow: hidden;
+				left: 10px;
+				top: 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<video autoplay muted loop class="bg-vid" id="vid" onplay="onVideoPlayEvent()">
+			<source src="./PexelsVideos1472013.mp4" type="video/mp4" />
+		</video>
+		<div class="img-logo-con">
+			<img src="./logo.png" alt="IA Logo">
+		</div>
+		<div class="center-band"
+			 style="display: flex; flex-direction: column wrap; justify-content: space-between; align-items: center">
+			<div>
+				<h2>HTTP Error:</h2>
+				<h1>404</h1>
+			</div>
+			<div class="fade-in">
+				<h3>Not Found</h3>
+			</div>
+		</div>
+	</body>
+
+</html>

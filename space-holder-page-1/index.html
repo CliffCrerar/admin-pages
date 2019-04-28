@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="domain" content="cdn-infinityarc.net">
+		<title>Future Space</title>
+		<style>
+			@import url('https://fonts.googleapis.com/css?family=Orbitron|Saira|ZCOOL+QingKe+HuangYou');
+
+			* {
+				box-sizing: border-box;
+			}
+
+			body {
+				background: black;
+				position: relative;
+				margin: 0;
+				padding: 0;
+				width: 100vw;
+				height: 100vh;
+			}
+
+			.text {
+				position: absolute;
+				color: white;
+				font-family: Saira;
+			}
+
+			.coming-soon {
+				left: 10%;
+				top: 10%;
+				z-index: 10;
+				animation-name: fadein;
+				animation-duration: 4s;
+				animation-direction: forwards;
+			}
+
+			.link {
+				bottom: 10%;
+				right: 10%;
+			}
+
+			.link a {
+				text-decoration: none !important;
+				text-decoration-color: white !important;
+				text-decoration-line: none !important;
+				font-family: Orbitron;
+				font-size: 2rem;
+			}
+
+			.link a span {
+				margin: 0 30px;
+			}
+
+			.text h1 {
+				position: relative;
+				width: 500px;
+				font-size: 4rem;
+			}
+
+			.statcode {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+			}
+
+			.statcode.text {
+				left: 60%;
+				z-index: 10;
+
+			}
+
+			.statcode.img img {
+				position: relative;
+				height: auto;
+				width: 150%;
+				left: -30%;
+			}
+
+			h2 {
+				margin: 0;
+				color: white;
+				font-family: ZCOOL QingKe HuangYou;
+				font-size: 12rem;
+				font-weight: 50;
+				letter-spacing: 45px;
+			}
+
+			@keyframes fadein {
+				0% {
+					opacity: 0
+				}
+
+				100% {
+					opacity: 1
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="text coming-soon">
+			<h1>Coming Soon</h1>
+		</div>
+
+
+		<div class="statcode text">
+			<h2>204</h2>
+		</div>
+		<div class="statcode img">
+			<img src="IA_gif7.gif" alt="some gif">
+		</div>
+
+
+		<div class="link text">
+			<a href="#">
+				<span>|</span>
+				InfinityArc.Net
+				<span>|</span>
+			</a>
+		</div>
+	</body>
+
+</html>

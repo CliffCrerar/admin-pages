@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Aldrich|Orbitron|Prompt|Rationale|Saira|ZCOOL+QingKe+HuangYou');
+* {
+	box-sizing: border-box;
+	--shad: 1px 1px 0 black, 2px 2px 0 black, 3px 3px 0 black, 5px 5px 8px rgba(0, 0, 0, 0.8),
+		7px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+html,
+body {
+	position: relative;
+	min-width: 100vw;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	font-family: Saira;
+}
+
+.bg-vid {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 120vw;
+	height: auto;
+}
+
+.center-band {
+	position: absolute;
+	top: 20vh;
+	min-height: 60vh;
+	width: 100%;
+	z-index: 100;
+	background: rgba(0, 0, 0, 0.4);
+	padding: 0 10vw;
+	color: white;
+}
+
+h1 {
+	font-size: 8rem;
+	text-shadow: var(--shad);
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	position: relative;
+	font-size: 4rem;
+	text-shadow: var(--shad);
+	margin: 0;
+	padding: 0;
+	left: 10%;
+}
+
+.fadeInText {
+	font-family: Aldrich;
+	font-size: 6rem;
+	text-align: center;
+	/* animation-name: phase; */
+	animation-duration: 3s;
+	animation-direction: forward;
+	text-shadow: var(--shad);
+}
+
+h5 {
+	position: relative;
+	font-family: Saira;
+	font-size: 4rem;
+	text-align: center;
+	/* text-shadow: var(--shad); */
+	margin: 0;
+	color: #0261c6;
+	animation-name: phase;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes phase {
+	0% {
+		opacity: 1;
+		transform: scale(1.1);
+	}
+	50% {
+		opacity: 0;
+		transform: scale(1);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1.1);
+	}
+}
+
+.center-band div:first-child {
+	width: 60vw;
+	flex-grow: 5;
+}
+
+.center-band div:last-child {
+	flex-grow: 2;
+}
+
+.fadeOut {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	background: white;
+	width: 100vw;
+	height: 100vh;
+	z-index: 1001;
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+.fade-in {
+	position: relative;
+	opacity: 0;
+	animation-duration: 15s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	/*animation: name duration timing-function delay iteration-count direction fill-mode;*/
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+		transform: scale(0.1);
+	}
+	70% {
+		transform: scale(1.5);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.img-logo-con {
+	position: absolute;
+}
+
+.img-logo-con img {
+	position: relative;
+	width: 80px;
+	border-radius: 8px;
+	overflow: hidden;
+	left: 10px;
+	top: 10px;
+}
