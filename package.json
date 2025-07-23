@@ -6,7 +6,7 @@
   "dependencies": {
     "aws-sdk": "^2.444.0",
     "fluent-ffmpeg": "^2.1.2",
-    "handbrake-js": "^3.0.8"
+    "handbrake-js": "^5.0.1"
   },
   "devDependencies": {},
   "scripts": {
